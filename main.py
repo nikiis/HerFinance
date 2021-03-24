@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 import json
 import os
 
@@ -32,8 +32,7 @@ def forum():
 
 
 if __name__ == "__main__":
-    # For deployment:
-    # export FLASK_APP=main.py
-    # export FLASK_ENV=development/production
-    # flask run --no-debugger
+    # For deployment followed this guide:
+    # https://stackabuse.com/deploying-a-flask-application-to-heroku/
+    
     app.run(threaded=True, port=5000)
