@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
     <title>HerFinance Resources</title>
 
     <link
@@ -53,7 +54,7 @@
         </button>
 
         <div class="d-flex" style="width: 100%; justify-content: space-between">
-            <a class="navbar-brand me-auto" href="#">
+            <a class="navbar-brand me-auto" href="{{ url_for('home') }}">
                 <img src="static/images/logobl.jpg" alt="HerFinance Logo"/>
             </a>
             <div class="collapse navbar-collapse ms-auto" id="navbarNavAltMarkup">
