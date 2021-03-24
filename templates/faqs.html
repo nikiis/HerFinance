@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>HerFinance</title>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+    />
+
+    <link href="static/css/styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+    />
+    <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+    />
+
+</head>
+<body>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-light bg-blue">
+    <div class="container-fluid">
+        <button
+                class="navbar-toggler ms-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-flex" style="width: 100%; justify-content: space-between">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="static/images/logobl.jpg" alt="HerFinance Logo"/>
+            </a>
+            <div class="collapse navbar-collapse ms-auto" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('resources') }}">RESOURCES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('faqs') }}">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('forum') }}">FORUM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR END-->
+
+<main>
+    <div class="container">
+        <p class="platform-header mb-3">The Money Questions We All Want Answers To</p>
+        <img src="static/images/wmn.jpg" class="wmnphone d-block mx-auto" width="80%"/>
+        <hr class="section-break" style="margin: 0 auto 50px auto"/>
+
+        <div class="d-flex justify-content-center">
+            <p class="money" style="line-height:1.5; max-width: 80%;">
+                Managing money can be overwhelming at times when we are a little uninformed on the best ways to save,
+                budget, and even invest. For this reason, we have researched frequently asked questions about money that
+                can
+                bring you some clarity.
+
+            </p>
+        </div>
+
+        <hr class="section-break"/>
+
+        <!-- Questions-->
+        <section class="questions" style="max-width: 80%; margin: 0 auto">
+            <div class="question">
+                <div class="question-title">
+                    <!-- question title-->
+                    <p class="budget" style="font-size:2.5rem; text-align: left">1. What is a budget? Do I need one?</p>
+                </div>
+                <div class="question-text money">
+                    <p>A budget will allow you to know how much money you are
+                        spending vs how much money
+                        you are making.</p>
+                    <p> Yes, you do need one to keep track of your income. A simple budgeting rule is the
+                        <strong style="color: #5abfb4;">50-20-30 rule: </strong></p>
+                    <p><strong style="color: #5abfb4;">50% </strong> of your income covers your living essentials:
+                        rent, groceries, transportation for work, healthcare, etc.</p>
+                    <p><strong style="color: #5abfb4;">20% </strong> of your income goes to your financial goals: <br>
+                        savings, investments, paying down debt, student loans, or a down payment on your first home.</p>
+                    <p><strong style="color: #5abfb4;">30% </strong> goes to your wants: shopping, dinners out, travel,
+                        or entertainment.</p>
+                </div>
+            </div>
+
+            <img src="static/images/rules.jpg" class="rules d-block text-center" width="60%"/>
+
+            <hr class="section-break"/>
+
+            <div class="question">
+                <div class="question-title">
+                    <!-- question title-->
+                    <p class="budget" style="font-size:2.5rem; text-align: left">2. How do I start budgeting?</p>
+                </div>
+                <div class="question-text money">
+                    <p>Before we go into more detail, remember that budgeting should have some flexibility, and do not
+                        give yourself a hard time if you fall off track. In the end, the important thing is to keep
+                        going.</p>
+                    <p><strong style="color: #5abfb4;">Step 1: </strong>Look at your payslips and give each dollar a job
+                        into the <strong style="color: #5abfb4;">50-20-30 </strong> categories. By organising your money
+                        into categories, you will know how much money you will be saving at the end of the month. </p>
+                    <p><strong style="color: #5abfb4;">Step 2: </strong> Let's take a look at your spending habits when
+                        you are not on a budget. What did you buy in your everyday life over a month? Write everything
+                        down as detailed as possible. </p>
+                    <p><strong style="color: #5abfb4;">Step 3: </strong> After putting your money into set categories
+                        (living essentials, financial goals, wants), it is also good to see what you can cut off.
+                        Perhaps you have a subscription (Hulu, Netflix) that you are no longer using?</p></p>
+                </div>
+            </div>
+
+            <hr class="section-break"/>
+
+            <div class="question">
+                <div class="question-title">
+                    <!-- question title-->
+                    <p class="budget" style="font-size:2.5rem; text-align: left">3. What does investing mean?</p>
+                </div>
+                <div class="question-text money">
+                    <p>Investing is the act of putting your money into a commodity, real estate, or companies to
+                        generate income.
+
+                        One of the easiest investments to begin with is a retirement savings account. You do not need to
+                        add lots of money to your retirement savings account, and it will slowly start to accumulate and
+                        gain interest. </p>
+
+                </div>
+            </div>
+
+            <hr class="section-break"/>
+
+            <div class="question">
+                <div class="question-title">
+                    <!-- question title-->
+                    <p class="budget" style="font-size:2.5rem; text-align: left">4. How much debt is too much?</p>
+                </div>
+                <div class="question-text money">
+                    <p>According to Career Contessa, when it comes to debt it depends wether it is student loans or
+                        credit card debt.
+                        When it comes to your credit card, it is best to keep your usage to 30 percent or less of the
+                        limit. For your debt in general (including car loans, house loans, personal loans), the target
+                        number is 20 percent or less.</p>
+                    <p>Still not sure? Ask yourself these questions to gauge: Can you only make the minimum on your
+                        payments? Are you skipping certain bills to pay off others? Are your cards maxed out? Are you
+                        living paycheck to paycheck?</p>
+                    <p> If you’re maxed out on one or several cards, come up with a dedicated plan to pay them down
+                        immediately. Focus on paying off the card with the highest interest first, then pick the
+                        remaining ones off one at a time. Use this credit payment calculator to help guide you:
+                        <a href="https://www.creditkarma.com/calculators/debtrepayment" class="link">Creditkarma</a>.
+                    </p>
+
+                </div>
+            </div>
+
+            <hr class="section-break"/>
+
+            <div class="question">
+                <div class="question-title">
+                    <!-- question title-->
+                    <p class="budget" style="font-size:2.5rem; text-align: left">5. I’m moving in with my partner, how
+                        do we split our finances?</p>
+                </div>
+                <div class="question-text money">
+                    <p>According to Your Money Under 30, here are the Do’s and Don'ts when you are with a partner and
+                        have not been married yet.</p>
+                    <p>Marriage does provides certain legal and financial safeguards for both couples. However, many
+                        couples are managing a joint budget without being married. So here are some things to watch out
+                        for.</p>
+                    <p><strong style="color: #5abfb4;">DON’T share assets: </strong> Do not buy anything together. That
+                        goes for houses, cars, and furniture, and especially checking accounts. Yes, you love him or
+                        her. But if things go sour, each takes their own.
+                    </p>
+                    <p><strong style="color: #5abfb4;">DON’T share debts: </strong> As tempting as it often is, I would
+                        recommend that you don’t cosign a loan for your partner. Whether you stay together or not, if he
+                        or she defaults, you either pay up or lose your credit. Cosigners should be family members. End
+                        of story.</p>
+                    <p><strong style="color: #5abfb4;">DO share expenses: </strong> Avoid the “free-for-all” approach to
+                        budgeting that I mentioned above. Before you move in, decide whether you will share expenses
+                        fifty-fifty or proportionately based upon salary. You may consider opening a joint checking
+                        account just for paying expenses. This should only be for bills and groceries.</p>
+                    <p><strong style="color: #5abfb4;"> DO plan for the worst: </strong> Although unlikely, consider the
+                        possibility that one of you could die. You’ll need to choose beneficiaries for everything from
+                        insurance policies to retirement plans.</p>
+                </div>
+            </div>
+
+            <hr class="section-break"/>
+
+            <p><span style="border-bottom: 3px solid #5abfb4">Sources</span></p>
+            <ol>
+                <li><a href="https://hermoney.com/invest/financial-planning/frequently-asked-questions-about-money/"
+                       class="btn btn-outline-secondary">HERMONEY</a></li>
+                <li><a href="https://www.careercontessa.com/advice/scary-money-questions/"
+                       class="btn btn-outline-secondary">Career Contessa</a></li>
+                <li><a href="https://www.moneyunder30.com/how-do-you-split-expenses-with-your-partner-or-spouse"
+                       class="btn btn-outline-secondary">Money under 30</a></li>
+            </ol>
+
+            <div class="footer">
+                <div class="container">
+                    <hr class="footer-hr"/>
+
+                    <!-- scroll to top btn-->
+
+                    <button id="btnScrollToTop">
+                        <i class="fas fa-chevron-circle-up"></i>
+                    </button>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+</main>
+
+<!-- JS -->
+<script
+        src="https://kit.fontawesome.com/211ade590b.js"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+></script>
+<script src="static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>HerFinance</title>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+    />
+
+    <link href="static/css/styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+    />
+    <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+    />
+
+</head>
+
+<!-- BODY -->
+
+<body>
+
+<!-- NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-light bg-blue">
+    <div class="container-fluid">
+        <button
+                class="navbar-toggler ms-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+                class="d-flex"
+                style="width: 100%; justify-content: space-between"
+        >
+            <a class="navbar-brand me-auto" href="#">
+                <img src="static/images/logobl.jpg" alt="HerFinance Logo"/>
+            </a>
+            <div
+                    class="collapse navbar-collapse ms-auto"
+                    id="navbarNavAltMarkup"
+            >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="index.html"
+                        >HOME</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('resources') }}"
+                        >RESOURCES</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('faqs') }}"
+                        >FAQ</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('forum') }}"
+                        >FORUM</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR END-->
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <h1 class="title">HER FINANCE</h1>
+    </div>
+
+
+    <div class="row">
+        <!-- slogan-->
+        <div class="col-md-5 col-sm-12 d-flex align-items-center">
+            <p class="lead ms-auto mt-5" style="max-width: 70%; text-align:right;">
+                Changing
+                the way
+                women
+                think about
+                money
+            </p>
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <img src="static/images/fca.jpg" class="me-auto" alt="women" width="100%"/>
+        </div>
+
+
+    </div>
+    <hr class="section-break"/>
+
+    <!--  Our Mission-->
+    <p class="platform-header mb-3"><span class="articles-header"
+                                          style="border-bottom: 10px solid #5abfb4;">OUR MISSION</span>
+    </p>
+    <div style="margin: 0 10%; text-align: center; font-size: 1.3rem; line-height: 1.8"
+         class="d-flex justify-content-center mt-5">
+        <p>The greatest recession of 2007-2009 was called a <b>“man-cession”</b> because the
+            hardest hit sectors were traditionally male: construction and manufacturing. However, in
+            2020, the word was newly branded “she-cession” as the worst hit industries are those that
+            can’t be done virtually and are largely dominated by women such as travel, education, health
+            services and retail. Now more than ever, it is vital for women to have financial security,
+            therefore, this is what led us to create a website that provides women with resources on how
+            to utilise money and to provide women with financial literacy. It is our mission to educate
+            women on finance particularly during uncertain times where women have accounted for 55%
+            of job losses during this pandemic. Investing in women’s financial literacy is the key to
+            achieving financial and social equality. As more women become leaders across the globe,
+            it’s imperative to ensure that they have access to a robust and impactful financial education.
+            With greater economic independence and empowerment, there are no limits to what we as
+            women can achieve.
+            <br/><br/><b>Welcome to Her Finance, created by <span style="color: #5abfb4">women</span>, for <span
+                    style="color: #5abfb4">women</span>.<b></p>
+    </div>
+
+
+    <hr class="section-break"/>
+    <!-- OUR PLATFORM-->
+
+    <p class="platform-header">OUR PLATFORM</p>
+
+    <div class="section values">
+        <div class="container">
+            <div class="row">
+                <div class="one-third col-sm-12 col-md-4 value">
+                    <h1 class="value-description1 nmbrs">1</h1>
+                    <p>
+                        Join a community <br/>
+                        of like-minded <br/>
+                        women
+                    </p>
+                </div>
+                <div class="one-third col-sm-12 col-md-4 value">
+                    <h1 class="value-description1 nmbrs">2</h1>
+                    <p>
+                        A female focused forum to discuss personal finance
+                    </p>
+                </div>
+                <div class="one-third col-sm-12 col-md-4 value">
+                    <h1 class="nmbrs value-description2">3</h1>
+                    <p>
+                        Helping women build personal wealth through
+                        collaborative learnings
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="section-break"/>
+
+    <section>
+
+    </section>
+
+    <!--PERSONAL FINANCE-->
+    <p class="finance-header">YOUR PERSONAL FINANCE</p>
+
+    <div class="section values">
+        <div class="container">
+            <div class="row">
+                <!--debts-->
+                <div class="one-third col-xs-12 col-md-4 value">
+                    <div class="finance-icon">
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </div>
+
+                    <h5
+                            class="value-heading"
+                            span
+                            style="font-weight: bold"
+                    >
+                        Paying off Debt
+                    </h5>
+
+                    <div class="margin">
+                        <div class="credit-icon1">
+                            <i class="fab fa-cc-visa"></i>
+                        </div>
+
+                        <div class="credit-icon2">
+                            <i class="far fa-credit-card"></i>
+                        </div>
+
+                        <p class="value-description">
+                            Women are more likely than men to struggle with debt, with women
+                            making up 55% of over-indebted people in the UK, and being 14% more likely than men to
+                            go insolvent, according to research by Money Advice Service. The reasons why women are
+                            more likely to accumulate debt include the fact that women are paid less than men (15.5%
+                            less in 2020), more likely to be in lower-paid jobs and more likely to leave work or go
+                            part-
+                            time to take care of caring responsibilities. Here are 4 recommended steps to dealing with
+                            debt...
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-outline-secondary" href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!--saving-->
+
+                <div class="one-third col-xs-12 col-md-4 value">
+                    <div class="finance-icon">
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </div>
+
+                    <h5 class="value-heading">Saving</h5>
+
+                    <div class="margin">
+                        <div class="credit-icon2">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+
+                        <p class="value-description">
+                            Research reveals a dramatic difference in the amount of money British men and
+                            women have in their savings, exposing a 32% gender savings gap. The consumer study, by
+                            leading discount site VoucherCodes.co.uk, reveals that the average man in Britain has
+                            £24,880 in savings – 32% more (£8,038) than the average British woman. The widest
+                            gender savings gap is found among millennials, with female respondents in that age group
+                            reporting 60% less in savings than their male counterparts – an enormous £15.9k. Yet again,
+                            the gender pay gap of 17.3% is making this impact...
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-outline-secondary" href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--investing-->
+                <div class="one-third col-xs-12 col-md-4 value">
+                    <div class="finance-icon">
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </div>
+
+                    <h5 class="value-heading">Investing</h5>
+                    <div class="margin">
+                        <div class="credit-icon2">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+
+                        <p class="value-description">
+                            Only 13% of women think they have a good amount of knowledge and
+                            understanding of investing and stock markets. A study, led by YouGov Omnibus, found that over half
+                            (52%) of UK women have never owned any investments, compared to 37% of men. The
+                            study also reveals that only one in five women hold an investment, against a third of men.
+                            And yet, investing could help women build up a decent nest for the future and turn their
+                            long-term goals into reality. So how do you get started?
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-outline-secondary" href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <hr class="footer-hr"/>
+
+            <!-- scroll to top btn-->
+
+            <button id="btnScrollToTop">
+                <i class="fas fa-chevron-circle-up"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+    <script
+            src="https://kit.fontawesome.com/211ade590b.js"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+    ></script>
+</div>
+
+<script src="static/app.js"></script>
+</body>
+</html>

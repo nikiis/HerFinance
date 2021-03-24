@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>HerFinance Forum</title>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+    />
+
+    <link href="static/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+    />
+    <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-light bg-blue">
+    <div class="container-fluid">
+        <button
+                class="navbar-toggler ms-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+                class="d-flex"
+                style="width: 100%; justify-content: space-between"
+        >
+            <a class="navbar-brand me-auto" href="#">
+                <img
+                        src="static/images/logobl.jpg"
+                        alt="HerFinance Logo"
+                />
+            </a>
+            <div
+                    class="collapse navbar-collapse ms-auto"
+                    id="navbarNavAltMarkup"
+            >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}"
+                        >HOME</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                class="nav-link"
+                                href="{{ url_for('resources') }}"
+                        >RESOURCES</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('faqs') }}"
+                        >FAQ</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="{{ url_for('forum') }}"
+                        >FORUM</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR END-->
+
+<main>
+    <div class="container">
+        <p class="forum-title mb-3">HER FINANCE FORUM</p>
+        <img
+                src="static/images/wmns.jpg"
+                class="wmnphone d-block mx-auto"
+                width="60%"
+        />
+        <p style="color: black" class="forum-header">
+            A women focused space to discuss personal finance
+        </p>
+
+        <hr class="section-break" />
+
+        <!-- forum section-->
+        <div style="margin: 0 10%">
+            <p class="forum-part" style="text-align: left">
+                <b>Join the discussion:</b>
+            </p>
+            <div id="comment-section">
+                <div class="row mt-5 comment-item">
+                    <div class="col-xs-12 col-sm-2 d-flex align-items-center">
+                        <i class="fas fa-user-circle fa-7x"></i>
+                    </div>
+                    <div class="col-xs-12 col-sm-10">
+                        <p
+                                class="user-name"
+                                style="font-size: 2rem; letter-spacing: 2px"
+                        >
+                            <b>Jane Doe</b>
+                        </p>
+                        <p
+                                class="user-comment"
+                                style="
+                                        font-size: 1.2rem;
+                                        letter-spacing: 1px;
+                                        color: #1b3936;
+                                    "
+                        >
+                            Your website has been very helpful for me.
+                            I've enjoyed reading your resources and
+                            getting more information about personal
+                            finance!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-break" />
+
+            <p class="forum-part mb-4" style="text-align: left">
+                <b>Leave a comment:</b>
+            </p>
+            <form>
+                        <textarea
+                                class="form-control"
+                                id="new-comment"
+                                rows="6"
+                                placeholder="Enter comment here"
+                                style="
+                                border: 10px solid #f2f5f6;
+                                border-radius: 10px;
+                            "
+                        ></textarea>
+                <input
+                        class="form-control mt-3"
+                        type="text"
+                        placeholder="Name"
+                        aria-label=".form-control-lg example"
+                        style="
+                                border: 10px solid #f2f5f6;
+                                border-radius: 10px;
+                            "
+                        id="username"
+                />
+                <input
+                        class="form-control my-3"
+                        type="text"
+                        placeholder="Email"
+                        aria-label=".form-control-lg example"
+                        style="
+                                border: 10px solid #f2f5f6;
+                                border-radius: 10px;
+                            "
+                        id="email"
+                />
+                <button
+                        id="add-comment"
+                        type="button"
+                        class="btn btn-outline-secondary mt-4"
+                >
+                    Add comment
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <hr class="footer-hr" />
+
+            <!-- scroll to top btn-->
+
+            <button id="btnScrollToTop">
+                <i class="fas fa-chevron-circle-up"></i>
+            </button>
+        </div>
+    </div>
+</main>
+
+<script
+        src="https://kit.fontawesome.com/211ade590b.js"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+></script>
+<script src="static/app.js"></script>
+<script>
+
+        </script>
+</body>
+</html>

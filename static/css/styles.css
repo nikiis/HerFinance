@@ -1,0 +1,285 @@
+[class*='col-'] {
+  padding: 1rem;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar {
+  background-color: #5abfb4;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: bold;
+
+  height: 80px;
+}
+nav a {
+  opacity: 1;
+  position: relative;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background: black;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  transform: scale(1, 1);
+}
+
+.navbar-nav {
+  margin-left: 20px;
+  font-size: 23px;
+}
+
+nav li {
+  margin-left: 2em;
+  margin-bottom: 0;
+}
+
+.title {
+  color: #5abfb4;
+  padding-left: 400px;
+  font-size: 80px;
+  margin-top: 80px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 3px;
+}
+.title:hover {
+  text-shadow: 0px 0px 10px #7b98f6;
+}
+.jumbotron {
+  font-family: Montserrat;
+}
+
+.pic {
+  position: absolute;
+  right: 0%;
+  margin-right: -150px;
+  margin-top: 50px;
+}
+
+.pic {
+  width: 700px;
+  height: 600px;
+}
+
+.lead {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 65px;
+}
+.value-description1 {
+  font-weight: bold;
+
+  font-size: 30px;
+}
+
+.platform-header {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin-top: 100px;
+  font-size: 65px;
+}
+.finance-header {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin-top: 100px;
+  font-size: 63px;
+}
+
+.value-heading {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.section {
+  font-family: Montserrat;
+}
+
+.one-third {
+  font-size: 21px;
+}
+.nmbrs {
+  width: 70px;
+  height: 95px;
+  font-weight: bold;
+  margin-top: -28px;
+  border-radius: 35px;
+  color: #7b98f6;
+  text-align: center;
+  font-size: 100px;
+  float: left;
+  margin-right: 10px;
+}
+.nmbrs:hover {
+  transform: rotate(360deg);
+}
+.finance-icon {
+  width: 70px;
+  height: 60px;
+  padding-top: 10px;
+  margin-top: -12px;
+  border-radius: 35px;
+  color: #5abfb4;
+  text-align: center;
+  font-size: 30px;
+  float: left;
+}
+.finance-icon:hover {
+  transform: rotate(360deg);
+}
+
+.credit-icon1 {
+  width: 70px;
+  height: 60px;
+  padding-top: 10px;
+  margin-top: -12px;
+  border-radius: 35px;
+
+  color: #5abfb4;
+  text-align: center;
+  font-size: 50px;
+  float: left;
+  padding-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transform: rotate(-20deg);
+}
+
+.credit-icon2 {
+  width: 70px;
+  height: 60px;
+  padding-top: 10px;
+  margin-top: -12px;
+  border-radius: 35px;
+  color: #7b98f6;
+  text-align: center;
+  font-size: 50px;
+  float: left;
+  padding-right: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.margin {
+  margin-top: 40px;
+}
+
+.materials-icon {
+  padding-top: 5px;
+}
+#btnScrollToTop {
+  color: #5abfb4;
+  font-size: 90px;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+  margin-left: 900px;
+  margin-bottom: 100px;
+}
+
+.money {
+  font-family: Montserrat;
+  font-size: 21px;
+}
+.wmnphone {
+  margin-left: 150px;
+}
+.wmns {
+  width: 750px;
+  height: 600px;
+}
+
+.budget {
+  text-align: center;
+  font-family: Montserrat;
+  color: #5abfb4;
+  letter-spacing: 3px;
+  font-size: 63px;
+}
+
+.rules {
+  margin-left: 200px;
+  margin-top: 90px;
+}
+
+.link {
+  text-decoration: none;
+  color: #7b98f6;
+}
+.link:hover {
+  text-shadow: 0px 0px 10px #7b98f6;
+}
+
+.forum-title {
+  color: #5abfb4;
+  padding-left: 400px;
+  font-size: 80px;
+  margin-top: 80px;
+  letter-spacing: 10px;
+  font-weight: lighter;
+  text-align: center;
+  padding-left: 3px;
+}
+.forum-header {
+  font-size: 42px;
+  text-align: center;
+  font-family: Montserrat;
+  letter-spacing: 4px;
+}
+
+.forum-part {
+  color: #5abfb4;
+  font-size: 35px;
+  margin-top: 80px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.row-forum {
+  margin-left: 200px;
+}
+
+.footer {
+    background-color #5abfb4:
+}
+
+.section-break{
+    color: #7B98F6;
+    max-width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.podcast img{
+    border-radius: 50%;
+    width: 60%;
+}
+
+.podcast .pod-title{
+    font-size: 1.5rem;
+    color: #5abfb4;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ol li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+
